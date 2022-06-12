@@ -23,6 +23,8 @@ function saveRecord(record) {
   const transactionObjectStore = transaction.objectStore('new_transaction');
 
   transactionObjectStore.add(record);
+
+  alert('Transaction has been saved!');
 };
 
 function uploadTransaction() {
